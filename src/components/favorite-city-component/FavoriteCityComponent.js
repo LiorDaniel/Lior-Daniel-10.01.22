@@ -19,7 +19,7 @@ function FavoriteCityComponent(props) {
 
     useEffect(() => {
 
-        axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${(favorites[props.id].key)}?apikey=${(apikey)}`).then((res) => {
+        axios.get(`https://dataservice.accuweather.com/currentconditions/v1/${(favorites[props.id].key)}?apikey=${(apikey)}`).then((res) => {
             setWeather(res.data[0])
         })
     }, [])
