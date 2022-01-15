@@ -1,0 +1,140 @@
+.all-forecast-container {
+  width: fit-content;
+  border: rgba(133, 133, 133, 0.103) 2px solid;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 50px;
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+.dark-mode-all-forecast {
+  border-color: rgba(100, 100, 100, 0.164);
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.current-forecast-details {
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.current-forecast-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+.current-forecast-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-forecast-middle {
+  font-size: 2em;
+  margin-right: 85px;
+}
+.current-forecast-icon {
+  width: 120px;
+}
+.weekly-forecast-container {
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+.daily-forecast {
+  border: 2px solid rgba(43, 43, 43, 0.082);
+  border-radius: 7px;
+  width: 130px;
+  font-size: 1.8em;
+  transition: border-color 0.2s, color 0.2s;
+  text-align: center;
+}
+
+.dark-mode-dailies {
+  border-color: rgba(255, 255, 255, 0.164);
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.daily-forecast-icon {
+  position: relative;
+  width: 60px;
+  float: left;
+}
+
+.daily-details {
+  text-align: center;
+  width: fit-content;
+  margin-top: 40%;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.day-name {
+  font-size: 0.5em;
+  font-weight: 600;
+}
+
+.icon-phrase {
+  font-size: 0.44em;
+  color: rgb(48, 48, 48);
+  margin-top: -10%;
+}
+
+.dark-mode-icon-phrase {
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.heart-icon-1 {
+  stroke-miterlimit: 10;
+  stroke-width: 6px;
+}
+
+.heart-icon {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.heart-icon:hover {
+  cursor: pointer;
+}
+
+.heart-icon:hover .empty-heart {
+  fill: #ff9253;
+  stroke: #ff9253;
+}
+
+.dark-mode-heart-icon:hover .empty-heart {
+  fill: rgb(255, 87, 51);
+  stroke: rgb(255, 87, 51);
+}
+
+.empty-heart {
+  fill: #ffffff;
+  stroke: #000;
+  transition: fill 0.2s, stroke 0.2s;
+}
+
+.full-heart {
+  fill: #ff9253;
+  stroke: #ff9253;
+}
+
+.full-heart-dark-mode {
+  fill: rgb(255, 87, 51);
+  stroke: rgb(255, 87, 51);
+}

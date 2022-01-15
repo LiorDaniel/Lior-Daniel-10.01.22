@@ -1,0 +1,37 @@
+.favorite-cities-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.favorite-forecast {
+  border: 2px solid rgba(43, 43, 43, 0.082);
+  width: 130px;
+  cursor: pointer;
+  margin-left: 20px;
+  display: inline-block;
+  border-radius: 7px;
+}
+
+.dark-mode-favorite {
+  border-color: rgba(117, 117, 117, 0.281);
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.favorite-city-title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.favorite-details {
+  font-size: 1.1em;
+}
+
+.favorite-icon-phrase {
+  font-size: 0.7em;
+}
