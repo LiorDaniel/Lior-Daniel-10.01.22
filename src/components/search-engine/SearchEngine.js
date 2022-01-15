@@ -21,7 +21,7 @@ function SearchEngine() {
     */
     function handleChange(event) {
         dispatch(setSearch(event.target.value))
-            axios.get(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${(apikey)}&q=${(search)}`).then((res)=>{
+            axios.get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${(apikey)}&q=${(search)}`).then((res)=>{
           dispatch(setSearchResults(res.data))
         })
     }

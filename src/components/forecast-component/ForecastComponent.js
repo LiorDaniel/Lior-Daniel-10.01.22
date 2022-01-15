@@ -67,10 +67,10 @@ function ForecastComponent() {
    params: being called whenever thre is a change in the selected city state
 */
   useEffect(() => {
-    axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${selectedCity.key}?apikey=${(apikey)}`).then((res) => {
+    axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${selectedCity.key}?apikey=${(apikey)}`).then((res) => {
       dispatch(setForecast(res.data.DailyForecasts))
     })
-    axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${selectedCity.key}?apikey=${(apikey)}`).then((res) => {
+    axios.get(`https://dataservice.accuweather.com/currentconditions/v1/${selectedCity.key}?apikey=${(apikey)}`).then((res) => {
       dispatch(setCurrentWeather(res.data[0]))
     })
   }, [selectedCity])
